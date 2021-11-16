@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+/*--------------------------------------------------------*/
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -13,6 +15,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 html, body, .main-container {
@@ -30,6 +33,10 @@ html, body, .main-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .card-summary {
@@ -42,8 +49,12 @@ html, body, .main-container {
           flex-direction: column;
 }
 
+.attribution {
+  padding-top: 2.5vw;
+}
+
 /*--------------------------------------------------------*/
-@media all and (min-width: 375px) {
+@media all and (min-width: 400px) {
   body {
     background-image: url("./images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
@@ -71,8 +82,8 @@ html, body, .main-container {
   }
   .card-summary > p {
     margin: 5%;
-    font-size: 1.5vw;
-    padding: 0 2.5vw 0 2.5vw;
+    font-size: 1.1vw;
+    padding: 0 2vw 0 3vw;
   }
   .card-summary > button {
     margin: 5% 0 3% 0;
@@ -102,7 +113,7 @@ html, body, .main-container {
     width: 20vw;
     height: auto;
     border-radius: 0.5vw;
-    padding: 0.5vw 0 0.5vw 0;
+    padding: 1.5vw 0 1.5vw 0;
   }
   .payment-card > img {
     width: 2.5vw;
@@ -114,9 +125,24 @@ html, body, .main-container {
   }
   .payment-card .price-card {
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
         align-self: center;
-    margin-right: 4.5vw;
+    margin-right: 3.5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .payment-card .price-card #p-plan {
+    width: 6.5vw;
+    font-size: 1vw;
+    font-weight: bold;
+  }
+  .payment-card .price-card #p-price {
+    width: 5.5vw;
+    font-size: 1vw;
   }
   .payment-card > a {
     -ms-flex-item-align: center;
@@ -127,30 +153,12 @@ html, body, .main-container {
     font-weight: bold;
     font-size: 1.1vw;
   }
-  .price-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .price-card #p-plan {
-    width: 5.5vw;
-    font-size: 1vw;
-    font-weight: bold;
-  }
-  .price-card #p-price {
-    width: 5.5vw;
-    font-size: 1vw;
-  }
-  .price-card > a {
-    font-size: 1vw;
+  .attribution {
+    font-size: 0.7vw;
   }
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 400px) {
   body {
     background-image: url("./images/pattern-background-mobile.svg");
     background-repeat: no-repeat;
@@ -248,6 +256,9 @@ html, body, .main-container {
     cursor: pointer;
     font-weight: bold;
     font-size: 4vw;
+  }
+  .attribution {
+    font-size: 2.5vw;
   }
 }
 /*# sourceMappingURL=styles.css.map */
