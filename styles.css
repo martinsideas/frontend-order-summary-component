@@ -89,7 +89,7 @@ html, body, .main-container {
     margin: 5% 0 3% 0;
     background-color: #3829e0;
     color: white;
-    border-radius: 0.5vw;
+    border-radius: 0.7vw;
     font-weight: bold;
     font-size: 1vw;
     cursor: pointer;
@@ -112,7 +112,7 @@ html, body, .main-container {
     background-color: #e0f5ff;
     width: 20vw;
     height: auto;
-    border-radius: 0.5vw;
+    border-radius: 0.7vw;
     padding: 1.5vw 0 1.5vw 0;
   }
   .payment-card > img {
@@ -172,12 +172,12 @@ html, body, .main-container {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border-radius: 2.5vw;
+    border-radius: 5vw;
   }
   .card-summary > img {
     width: 100%;
     height: auto;
-    border-radius: 2.5vw 2.5vw 0 0;
+    border-radius: 5vw 5vw 0 0;
   }
   .card-summary > h2 {
     margin-top: 5%;
@@ -186,14 +186,14 @@ html, body, .main-container {
   }
   .card-summary > p {
     margin: 5%;
-    font-size: 5vw;
-    padding: 0 2.5vw 0 2.5vw;
+    font-size: 4vw;
+    padding: 0 1.5vw 0 1.5vw;
   }
   .card-summary > button {
     margin: 5% 0 3% 0;
     background-color: #3829e0;
     color: white;
-    border-radius: 1.5vw;
+    border-radius: 2vw;
     font-weight: bold;
     font-size: 5vw;
     cursor: pointer;
@@ -216,7 +216,7 @@ html, body, .main-container {
     background-color: #e0f5ff;
     width: 75vw;
     height: auto;
-    border-radius: 1.5vw;
+    border-radius: 2.5vw;
     padding: 4vw 0 4vw 0;
   }
   .payment-card > img {
